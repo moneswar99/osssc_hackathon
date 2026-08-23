@@ -85,6 +85,17 @@ export interface FarmerProfile {
   schemes_enrolled: number;
 }
 
+export interface CropRecommendation {
+  crop: string;
+  period: string;
+  water: string;
+  difficulty: string;
+  yield: string;
+  market_demand: string;
+  reason: string;
+  icon: string;
+}
+
 export type Language = 'en' | 'te' | 'hi';
 
 export type AppView = 'landing' | 'app';
