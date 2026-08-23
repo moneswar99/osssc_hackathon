@@ -1,0 +1,11 @@
+{
+  "buildCommand": "cd kisanmitra/frontend && npm run build",
+  "outputDirectory": "kisanmitra/frontend/dist",
+  "installCommand": "cd kisanmitra/frontend && npm install",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
