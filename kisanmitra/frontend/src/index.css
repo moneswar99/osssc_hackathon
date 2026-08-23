@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #4CAF50;
+  border-radius: 3px;
+}
+
+/* Prevent text cursor on non-editable UI elements */
+div, span, p, h1, h2, h3, h4, h5, h6, li, aside, nav, header, footer, section, article {
+  user-select: none;
+  cursor: default;
+}
+
+/* Re-enable selection only where it makes sense */
+input, textarea, [contenteditable], .selectable {
+  user-select: text;
+  cursor: text;
+}
+
+button, a, [role="button"] {
+  cursor: pointer;
+}
+
+/* Smooth transitions */
+* {
+  transition-property: color, background-color, border-color;
+  transition-duration: 150ms;
+}
